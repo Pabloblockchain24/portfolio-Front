@@ -1,0 +1,128 @@
+.skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgba(140, 140, 140, 1);
+    margin-top: 5vh;
+    padding-top: 5vh;
+    margin-bottom: 10vh;
+    width: 70%;
+    margin-inline: auto;
+}
+.skills-title{
+    font-size: xx-large;
+    font-weight: bold;
+    margin-block: 3%;
+}
+
+.skills-hard{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1%;
+    padding-block: 1%;
+}
+
+.skills-hard-logo{
+    width: 5%;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 1s ease-in-out, transform 1s;
+}
+
+.skills-hard-logo.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.skills-soft{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.skills-soft-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 90%;
+    padding-inline: 5%;
+    color: black;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform 1s, opacity 0.5s;
+}
+
+.skills-soft-card.visible {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.item1{
+    padding-block: auto;
+    background-color: rgba(230, 126, 34, 1);
+    grid-row: span 2;
+}
+
+.item1 h2, .item1 img, .item1 p{
+    background-color: rgba(230, 126, 34, 1);
+    font-size: medium;
+}
+
+.item2{
+    background-color: rgba(140, 140, 140, 1);
+    width: auto;
+}
+
+.item2 h2, .item2 img, .item2 p{
+    background-color: rgba(140, 140, 140, 1);
+    font-size: medium;
+
+}
+
+.item3{
+    background-color: rgb(255, 255, 255);
+    width: auto;
+
+}
+
+.item3 h2, .item3 p{
+    font-size: medium;
+    padding-bottom: 3%;
+}
+
+
+.item4{
+    background-color: rgb(57, 118, 158);
+    grid-row: span 2;
+
+}
+
+.item4 h2, .item4 img, .item4 p{
+    background-color: rgb(57, 118, 158);
+    font-size: medium;
+
+}
+
+
+.skills-soft-card-img{
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+}
+
+.skills-soft-card-title{
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 2%;
+
+}
+
+
+.skills-soft-card-paragraph{
+    background-color: rgb(255, 255, 255);
+
+}
