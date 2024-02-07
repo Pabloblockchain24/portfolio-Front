@@ -38,7 +38,7 @@ useEffect(() => {
   return (
     <main className='skills' id="skills">
       <h1 className='skills-title'> Skills</h1>
-
+      <h2 className='skills-subtitle'> "Mi principal habilidad radica en desafiarme constantemente, lo que me mantiene motivado y realizado en le mundo tech."  </h2>
       <section className='skills-hard'>
           <img src={htmlLogo} alt="HTML Logo" className="skills-hard-logo" />
           <img src={cssLogo} alt="CSS Logo" className="skills-hard-logo" />

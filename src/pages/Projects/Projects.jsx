@@ -25,6 +25,7 @@ function Projects() {
   return (
     <main className='projects' id="projects">
       <h1 className='project-title'> Projects</h1>
+      <h2 className='project-subtitle'>"Transformar ideas en código es un arte."</h2>
       <section id="projects-section" >
         <article className='project-article'>
           <div className='project-article-text'>
