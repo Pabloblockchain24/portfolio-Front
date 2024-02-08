@@ -12,7 +12,6 @@ function Footer() {
             <section className='footer-main'>
                 <article className='footer-main-section'>© 2023 DESARROLLADO POR PABLO ARCE</article>
                 <article className='footer-main-contact'>
-                    <h2> Contactame aquí </h2>
 
                     <div className='footer-contact-buttons'>
                     <a href="https://www.linkedin.com/in/pablo-arce-paiva-690139253/" > <FaLinkedin className='footer-contact-buttons-fa' /> </a>

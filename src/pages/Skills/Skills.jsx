@@ -75,18 +75,7 @@ useEffect(() => {
           <h2 className='skills-soft-card-title'> ORGANIZACION Y PLANIFICACION </h2>
           <p className='skills-soft-card-paragraph'> 10 años aplicando planificacion estrategica, con objetivos a corto, mediano y largo plazo, personal y laboralmente</p>
         </article>
-
-        {/* <article className='skills-soft-card'>
-          <img src={responsabilidad} alt="Responsabilidad" className='skills-soft-card-img' />
-          <h2 className='skills-soft-card-title'> RESPONSABILIDAD </h2>
-          <p className='skills-soft-card-paragraph'>  El compromiso, la puntualidad y la responsabilidad son habilidades que me representan como trabajador, colega y persona </p>
-        </article> */}
-
-
       </section>
-
-
-
       <section className='skills-titulos'>
 
       </section>

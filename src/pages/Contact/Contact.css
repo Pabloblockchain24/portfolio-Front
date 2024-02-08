@@ -82,6 +82,10 @@
 
 
 .contact-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: whitesmoke;
     border: 0.1px solid #000000;
     font-size: medium;
@@ -89,7 +93,7 @@
     padding-inline: 1rem;
     padding-block: 0.5rem;
     margin-block: 2rem;
-    width: 35%;
+    width: 20%;
     margin-inline: auto;
 }
 
@@ -108,4 +112,10 @@
     margin-top: 3%;
     background-color: whitesmoke;
     font-size: small;
+}
+
+@media screen and (max-width: 600px) {
+    .contact-button{
+        font-size: small;
+    }
 }

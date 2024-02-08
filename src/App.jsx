@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { BrowserRouter } from "react-router-dom";
+
 import Home from "./pages/Home/Home";
 import Navbar from "./components/Navbar/Navbar"
 import Projects from "./pages/Projects/Projects";
@@ -14,6 +16,8 @@ function App() {
   };
 
   return (
+    <BrowserRouter>
+
     <div key={animationKey}>
           <Navbar onLinkClick={handleAnimationReload}/>
           <Home />
@@ -22,6 +26,9 @@ function App() {
           <Contact />
           <Footer />
     </div>
+
+    </BrowserRouter>
+
   )
 }
 export default App
