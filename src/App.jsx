@@ -18,14 +18,14 @@ function App() {
   return (
     <BrowserRouter>
 
-    <div key={animationKey}>
-          <Navbar onLinkClick={handleAnimationReload}/>
-          <Home />
-          <Projects />
-          <Skills />
-          <Contact />
-          <Footer />
-    </div>
+      <div key={animationKey}>
+        <Navbar onLinkClick={handleAnimationReload} />
+        <Home />
+        <Projects />
+        <Skills />
+        <Contact />
+        <Footer />
+      </div>
 
     </BrowserRouter>
 

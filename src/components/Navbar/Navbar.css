@@ -13,6 +13,14 @@
     border-bottom: 1px solid rgba(140, 140, 140, 1);
 }
 
+.navbarCustom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 1.5rem;
+}
+
 .nav-list {
     list-style-type: none;
     text-decoration: none;
@@ -41,7 +49,7 @@
 
 .menuMobile {
     display: none;
-    margin-right: 5%;
+    width: 0%;
 }
 
 .buttonAbrir{
@@ -58,14 +66,6 @@
   margin-bottom: 10%;
 }
   
-.navbarCustom {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  padding: 1.5rem;
-}
-
 
 @media screen and (max-width: 1200px) {
     .nav-list {
@@ -88,7 +88,6 @@
     font-size: 2rem;
     background-color: transparent;
     cursor: pointer;
-    margin-right: 5%;
     color: black;
   }
   
@@ -103,6 +102,7 @@
    }
 
     .navbarCustom {
+      width: 35%;
       opacity: 0;
       visibility: hidden;
       display: flex;
@@ -114,12 +114,8 @@
       top: 0;
       right: 0;
       bottom: 0;
-      z-index: 1000;
-      gap: 2rem;
-      padding: 3rem;
-      box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.4);
-      width: 35%;
-      background-color:rgba(140, 140, 140, 1);
+      padding: 2rem;
+      box-shadow: 0 0 0 100vmax rgba(183, 184, 171, 0.5);
     }
 
     .navbarCustom.visible {
@@ -128,7 +124,7 @@
     }
 
     .nav-list {
-      width: 90%;
+      width: 100%;
       flex-direction: column;
       justify-content: center;
       align-items: end;

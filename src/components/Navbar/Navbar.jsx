@@ -9,12 +9,12 @@ function Navbar({ onLinkClick }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
 
-
-  const handleClick = (targetId) => {
+  const handleClick = (targetId, event) => {
+    event.preventDefault();
     const targetElement = document.getElementById(targetId);
     if (targetElement) {
       targetElement.scrollIntoView({ behavior: 'smooth' });
-      onLinkClick(); // Llama a la función proporcionada por la prop
+      onLinkClick();
     }
   };
 
@@ -26,21 +26,19 @@ function Navbar({ onLinkClick }) {
     setMenuOpen(false);
   }, [location.pathname]);
 
-
   return (
-    <header className='nav-header'>
-      <button className="menuMobile" onClick={toggleMenu}> <PiListFill className='buttonAbrir' /> </button>
-      <nav className={menuOpen ? 'navbarCustom visible' : 'navbarCustom'}>
-        <ul className='nav-list'>
-          <button className="cerrarMenuMobile" onClick={toggleMenu}><AiFillCloseSquare /></button>
-          <li><a href="#home" onClick={() => handleClick('home')}>{'<About me/>'}</a></li>
-          <li><a href="#projects" onClick={() => handleClick('projects')}>{'<Projects/>'}</a></li>
-          <li><a href="#skills" onClick={() => handleClick('skills')}>{'<Skills/>'}</a></li>
-          <li><a href="#contact" onClick={() => handleClick('contact')}>{'<Contact/>'}</a></li>
-        </ul>
-      </nav>
-
-    </header>
+      <header className='nav-header'>
+        <button className="menuMobile" onClick={toggleMenu}> <PiListFill className='buttonAbrir' /> </button>
+        <nav className={menuOpen ? 'navbarCustom visible' : 'navbarCustom'}>
+          <ul className='nav-list'>
+            <button className="cerrarMenuMobile" onClick={toggleMenu}><AiFillCloseSquare /></button>
+            <li><a href="#home" onClick={(e) => handleClick('home', e)}>{'<About me/>'}</a></li>
+            <li><a href="#projects" onClick={(e) => handleClick('projects', e)}>{'<Projects/>'}</a></li>
+            <li><a href="#skills" onClick={(e) => handleClick('skills', e)}>{'<Skills/>'}</a></li>
+            <li><a href="#contact" onClick={(e) => handleClick('contact', e)}>{'<Contact/>'}</a></li>
+          </ul>
+        </nav>
+      </header>
   )
 }
 
