@@ -38,7 +38,7 @@ function Projects() {
               <img src={nodeLogo} alt="node Logo" className="project-article-techs-logo" />
             </div>
             <div className='project-article-codes'>
-              <p>CODE:</p>
+            <p className='project-article-codes-p'>CODE:</p>
               <div className='project-article-codes-section'>
                 <a href="https://github.com/Pabloblockchain24/transcurrin.cl" className='project-article-codes-link'> <FaGithubSquare /> <p className='project-article-codes-link-p'>FRONTEND</p> </a>
                 <a href="https://github.com/Pabloblockchain24/serverTranscurrin" className='project-article-codes-link'> <FaGithubSquare /> <p className='project-article-codes-link-p'>BACKEND</p> </a>
@@ -63,7 +63,7 @@ function Projects() {
               <img src={nodeLogo} alt="node Logo" className="project-article-techs-logo" />
             </div>
             <div className='project-article-codes'>
-              <p>CODE:</p>
+            <p className='project-article-codes-p'>CODE:</p>
               <div className='project-article-codes-section'>
                 <a href="https://github.com/Pabloblockchain24/transcurrin.cl" className='project-article-codes-link'> <FaGithubSquare /> <p className='project-article-codes-link-p'>FRONTEND</p> </a>
                 <a href="https://github.com/Pabloblockchain24/serverTranscurrin" className='project-article-codes-link'> <FaGithubSquare /> <p className='project-article-codes-link-p'>BACKEND</p> </a>
@@ -86,7 +86,7 @@ function Projects() {
               <img src={cssLogo} alt="css Logo" className="project-article-techs-logo" />
             </div>
             <div className='project-article-codes'>
-              <p>CODE:</p>
+              <p className='project-article-codes-p'>CODE:</p>
               <div className='project-article-codes-section'>
                 <a href="https://github.com/Pabloblockchain24/transcurrin.cl" className='project-article-codes-link'> <FaGithubSquare /> <p className='project-article-codes-link-p'>FRONTEND</p> </a>
                 <a href="https://github.com/Pabloblockchain24/serverTranscurrin" className='project-article-codes-link'> <FaGithubSquare /> <p className='project-article-codes-link-p'>BACKEND</p> </a>

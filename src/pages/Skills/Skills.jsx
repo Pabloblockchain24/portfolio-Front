@@ -73,7 +73,7 @@ useEffect(() => {
         <article className='skills-soft-card item3'>
           <img src={planificacion} alt="Planificación" className='skills-soft-card-img' />
           <h2 className='skills-soft-card-title'> ORGANIZACION Y PLANIFICACION </h2>
-          <p className='skills-soft-card-paragraph'> 10 años aplicando planificacion estrategica, con objetivos a corto, mediano y largo plazo, personal y laboralmente</p>
+          <p className='skills-soft-card-paragraph'> 10 años aplicando planificación estratégica, a corto y largo plazo, personal y laboralmente</p>
         </article>
       </section>
       <section className='skills-titulos'>

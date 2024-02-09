@@ -60,7 +60,7 @@
     text-align: center;
     justify-content: center;
     width: 90%;
-    padding-inline: 5%;
+    padding: 5%;
     color: black;
     opacity: 0;
     transform: translateX(100%);
@@ -73,13 +73,12 @@
 }
 
 .item1{
-    padding-block: auto;
-    background-color: rgba(230, 126, 34, 1);
+    background-color: rgba(220, 220, 220, 1);
     grid-row: span 2;
 }
 
 .item1 h2, .item1 img, .item1 p{
-    background-color: rgba(230, 126, 34, 1);
+    background-color: rgba(220, 220, 220, 1);
     font-size: medium;
 }
 
@@ -95,27 +94,27 @@
 }
 
 .item3{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(231, 231, 231);
     width: auto;
 
 }
 
-.item3 h2, .item3 p{
+.item3 h2, .item3 p, .item3 img{
     font-size: medium;
-    padding-bottom: 3%;
+    background-color: rgb(231, 231, 231);
+
 }
 
 
 .item4{
-    background-color: rgb(57, 118, 158);
+    background-color: rgb(204, 204, 204);
     grid-row: span 2;
 
 }
 
 .item4 h2, .item4 img, .item4 p{
-    background-color: rgb(57, 118, 158);
+    background-color: rgb(204, 204, 204);
     font-size: medium;
-
 }
 
 
@@ -165,6 +164,10 @@
     .skills-soft-card-img{
         width: 60px;
     }
+
+    .item1 h2, .item2 h2, .item3 h2, .item4 h2{
+        font-size: small;
+    }
     
     .item1 p, .item2 p, .item3 p, .item4 p{
         font-size: small;
@@ -174,12 +177,12 @@
 @media screen and (max-width: 450px) {
     .skills-title{
         font-size: large;
-        margin-bottom: 2%;
+        margin-block: 3%;
     }
 
     .skills-subtitle{
-        font-size: small;
-        margin-bottom: 5%;
+        font-size: x-small;
+        margin-bottom: 10%;
     }
 
     .skills{
@@ -191,14 +194,16 @@
     }
 
     .skills-soft-card-img{
-        width: 25px;
+        width: 22px;
     }
     .item1 h2, .item2 h2, .item3 h2, .item4 h2{
-        font-size: x-small;
+        margin-top: 5%;
+        font-size: xx-small;
     }
     
     .item1 p, .item2 p, .item3 p, .item4 p{
-        font-size: x-small;
+        margin-block: 5%;
+        font-size: xx-small;
     }
 }
 
