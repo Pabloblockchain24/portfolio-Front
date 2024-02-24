@@ -3,13 +3,13 @@ import "./Home.css"
 import fotoPerfil from "../../assets/fotoPerfilPortafolio.png"
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import { FaSquareWhatsapp } from "react-icons/fa6";
-import cvPdf from "../../assets/others/CV-PabloArce.pdf"
+import cvPdf from "../../assets/others/CV-Pablo_Arce_Paiva.pdf"
 
 function Home() {
     const handleDescargarClick = () => {
         const link = document.createElement('a');
         link.href = cvPdf;
-        link.download = 'Cv_Pablo_Arce.pdf';
+        link.download = 'CV-Pablo_Arce_Paiva.pdf';
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
