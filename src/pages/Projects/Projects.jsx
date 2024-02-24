@@ -65,14 +65,14 @@ function Projects() {
             <div className='project-article-codes'>
             <p className='project-article-codes-p'>CODE:</p>
               <div className='project-article-codes-section'>
-                <a href="https://github.com/Pabloblockchain24/transcurrin.cl" className='project-article-codes-link'> <FaGithubSquare /> <p className='project-article-codes-link-p'>FRONTEND</p> </a>
-                <a href="https://github.com/Pabloblockchain24/serverTranscurrin" className='project-article-codes-link'> <FaGithubSquare /> <p className='project-article-codes-link-p'>BACKEND</p> </a>
+                <a href="https://github.com/Pabloblockchain24/bobo.cl-front" className='project-article-codes-link'> <FaGithubSquare /> <p className='project-article-codes-link-p'>FRONTEND</p> </a>
+                <a href="https://github.com/Pabloblockchain24/bobo.cl-back" className='project-article-codes-link'> <FaGithubSquare /> <p className='project-article-codes-link-p'>BACKEND</p> </a>
               </div>
             </div>
           </div>
           <div className='project-article-iframe'>
-            <iframe src="https://transcurrin-cl-client.vercel.app/" width="300" height="200" frameborder="0"></iframe>
-            <a href="https://transcurrin-cl-client.vercel.app/" class="project-article-iframe-enlace">VER DEPLOY</a>
+            <iframe src="https://bobo-cl-front.vercel.app/" width="300" height="200" frameborder="0"></iframe>
+            <a href="https://bobo-cl-front.vercel.app/" class="project-article-iframe-enlace">VER DEPLOY</a>
           </div>
         </article>
 
