@@ -78,8 +78,8 @@ function Projects() {
 
         <article className='project-article'>
           <div className='project-article-text'>
-            <h2 className='project-article-title'>TODOTASKS.CL</h2>
-            <p className='project-article-description'>Proyecto front-end desarrollado con js-vainilla, html y css. La aplicación web permite gestionar las tareas de un usuario.</p>
+            <h2 className='project-article-title'>E-TherapTime</h2>
+            <p className='project-article-description'>Proyecto front-end desarrollado con js-vainilla, html y css. La aplicación web permite gestionar y agendar horas de psicoterapia con una profesional.</p>
             <div className='project-article-techs'>
               <img src={jsLogo} alt="js Logo" className="project-article-techs-logo" />
               <img src={htmlLogo} alt="html Logo" className="project-article-techs-logo" />
