@@ -47,8 +47,8 @@
 }
 
 .fotoPerfil {
-    width: 40%;
-
+    width: 50%;
+    border-radius: 10rem;
 }
 
 .home-text-name {
