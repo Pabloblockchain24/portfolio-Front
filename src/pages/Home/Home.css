@@ -2,23 +2,29 @@
     font-family: 'Courier New', Courier, monospace;
     padding: 0;
     margin: 0;
-    background-color: rgba(23, 42, 58, 1);
-    list-style-type: none;
     text-decoration: none;
+    list-style: none;
 }
 
+.home-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: calc(100vh - 60px);
+
+}
 
 .home {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-inline: auto;
-    width: 100%;
-    margin-top: 10vh;
-    padding-top: 10vh;
-
+    background-color: rgba(23, 42, 58, 1);
+    height: 60vh;
 }
+
+
 
 .home-photo {
     display: flex;
@@ -28,6 +34,9 @@
     width: 50%;
     padding-right: 3%;
 }
+
+
+
 
 .home-text {
     display: flex;
@@ -112,6 +121,7 @@
     color: whitesmoke;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
     cursor: pointer;
+    background-color: rgba(23, 42, 58, 1);
 }
 
 .home-text-buttons-Cv:hover {
@@ -125,7 +135,33 @@
     font-size: medium;
 }
 
+.buttonAbajo{
+    background-color: transparent;
+    border:none;
+    cursor: pointer;
+    width: 3%;
+}
 
+.parpadeo {
+    animation: parpadeo 1s infinite alternate;
+}
+.flechaAbajo{
+    border: 1.5px solid white; /* Establece un contorno blanco */
+    border-radius: 50%; /* Hace que el contorno sea circular */
+    font-size: 1rem;
+    padding: 7px;
+    color: white;
+}
+
+
+@keyframes parpadeo {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.1;
+    }
+}
 
 @media screen and (max-width: 992px) {
 

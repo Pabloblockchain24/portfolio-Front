@@ -36,7 +36,7 @@ useEffect(() => {
 
 
   return (
-    <main className='skills' id="skills">
+    <section className='skills' id="skills">
       <h1 className='skills-title'> Skills</h1>
       <h2 className='skills-subtitle'> "Mi principal habilidad radica en desafiarme constantemente, lo que me mantiene motivado y realizado en el mundo tech."  </h2>
       <section className='skills-hard'>
@@ -79,7 +79,7 @@ useEffect(() => {
       <section className='skills-titulos'>
 
       </section>
-    </main>
+    </section>
   )
 }
 

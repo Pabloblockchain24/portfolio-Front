@@ -18,13 +18,27 @@ function Navbar({ onLinkClick }) {
     }
   };
 
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [location.pathname]);
+
+  useEffect(() => {
+    const scrolling = () => {
+      let header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    };
+    window.addEventListener("scroll", scrolling);
+    return () => {
+      window.removeEventListener("scroll", scrolling);
+    };
+  }, []);
+
+  
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
-  useEffect(() => {
-    setMenuOpen(false);
-  }, [location.pathname]);
+
 
   return (
       <header className='nav-header'>
