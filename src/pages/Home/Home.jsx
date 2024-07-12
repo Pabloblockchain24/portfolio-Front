@@ -4,11 +4,7 @@ import "./Home.css"
 import fotoPerfil from "../../assets/fotoPerfilPortafolio.jpg"
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import { FaSquareWhatsapp, FaArrowDown } from "react-icons/fa6";
-
-import cvPdf from "../../assets/others/CV-Pablo_Arce_Paiva.pdf"
-
-
-
+import cvPdf from "../../assets/others/cv-Pablo_Arce_Paiva.pdf"
 
 function Home() {
     const handleDescargarClick = () => {
