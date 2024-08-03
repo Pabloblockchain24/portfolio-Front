@@ -4,7 +4,6 @@ import fotoPerfil from "../../assets/fotoPerfilPortafolio.jpg"
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import { FaSquareWhatsapp, FaArrowDown } from "react-icons/fa6";
 
-
 function Home() {
     const handleDescargarClick = () => {
         const link = document.createElement('a');
