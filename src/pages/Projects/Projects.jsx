@@ -44,8 +44,8 @@ function Projects() {
             </div>
           </div>
           <div className='project-article-iframe'>
-            <iframe src="https://transcurrin-cl-client.vercel.app/" width="300" height="200" frameborder="0" scrolling="no"></iframe>
-            <a href="https://transcurrin-cl-client.vercel.app/" class="project-article-iframe-enlace">VER SITIO</a>
+            <iframe src="https://www.transcurrin.cl" width="300" height="200" frameborder="0" scrolling="no"></iframe>
+            <a href="https://www.transcurrin.cl" class="project-article-iframe-enlace">VER SITIO</a>
 
           </div>
         </article>
