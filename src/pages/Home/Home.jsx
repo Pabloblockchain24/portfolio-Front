@@ -1,15 +1,14 @@
 import React from 'react'
-import { useState } from 'react';
 import "./Home.css"
 import fotoPerfil from "../../assets/fotoPerfilPortafolio.jpg"
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import { FaSquareWhatsapp, FaArrowDown } from "react-icons/fa6";
-import cvPdf from "../../assets/others/cv-Pablo_Arce_Paiva.pdf"
+
 
 function Home() {
     const handleDescargarClick = () => {
         const link = document.createElement('a');
-        link.href = cvPdf;
+        link.href = "../../../cv-Pablo_Arce_Paiva.pdf";
         link.download = 'CV-Pablo_Arce_Paiva.pdf';
         document.body.appendChild(link);
         link.click();
