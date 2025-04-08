@@ -25,7 +25,7 @@ function Projects() {
       <h1 className='project-title'> Projects</h1>
       <h2 className='project-subtitle'>"Transformar ideas en código es un arte."</h2>
 
-      <article className='prueba'>
+      {/* <article className='prueba'>
           <div className='prueba-section1'>
             <h2 className='project-article-title'>TRANSCURRIN.CL</h2>
             <p className='project-article-description'>Proyecto full-stack con MERN y deploy en Vercel. Cuenta con una aplicacion web comercial y una intranet para clientes.</p>
@@ -48,9 +48,30 @@ function Projects() {
             <a href="https://www.transcurrin.cl" class="project-article-iframe-enlace">VER SITIO</a>
 
           </div>
+        </article> */}
+
+<article className='project-article'>
+          <div className='project-article-text'>
+            <h2 className='project-article-title'>Hospital Adalid</h2>
+            <p className='project-article-description'>Proyecto front-end desarrollado con react para el curso de especialización frontend de corfo con adalid</p>
+            <div className='project-article-techs'>
+            <img src={reactLogo} alt="react Logo" className="project-article-techs-logo" />
+            <img src={htmlLogo} alt="html Logo" className="project-article-techs-logo" />
+              <img src={cssLogo} alt="css Logo" className="project-article-techs-logo" />
+            </div>
+            <div className='project-article-codes'>
+              <p className='project-article-codes-p'>CODE:</p>
+              <div className='project-article-codes-section'>
+                <a href="https://github.com/Pabloblockchain24/transcurrin.cl" className='project-article-codes-link'> <FaGithubSquare /> <p className='project-article-codes-link-p'>FRONTEND</p> </a>
+                <a href="https://github.com/Pabloblockchain24/serverTranscurrin" className='project-article-codes-link'> <FaGithubSquare /> <p className='project-article-codes-link-p'>BACKEND</p> </a>
+              </div>
+            </div>
+          </div>
+          <div className='project-article-iframe'>
+            <iframe src="https://transcurrin-cl-client.vercel.app/" width="300" height="200" frameborder="0" scrolling="no"></iframe>
+            <a href="https://transcurrin-cl-client.vercel.app/" class="project-article-iframe-enlace">VER SITIO</a>
+          </div>
         </article>
-
-
 
 
 
@@ -74,8 +95,8 @@ function Projects() {
             </div>
           </div>
           <div className='project-article-iframe'>
-            <iframe src="https://transcurrin-cl-client.vercel.app/" width="300" height="200" frameborder="0" scrolling="no"></iframe>
-            <a href="https://transcurrin-cl-client.vercel.app/" class="project-article-iframe-enlace">VER SITIO</a>
+            <iframe src="https://www.transcurrin.cl" width="300" height="200" frameborder="0" scrolling="no"></iframe>
+            <a href="https://www.transcurrin.cl" class="project-article-iframe-enlace">VER SITIO</a>
 
           </div>
         </article>
@@ -104,7 +125,7 @@ function Projects() {
           </div>
         </article>
 
-        <article className='project-article'>
+        {/* <article className='project-article'>
           <div className='project-article-text'>
             <h2 className='project-article-title'>E-TherapTime</h2>
             <p className='project-article-description'>Proyecto front-end desarrollado con js-vainilla, html y css. La aplicación web permite gestionar y agendar horas de psicoterapia con una profesional.</p>
@@ -125,7 +146,7 @@ function Projects() {
             <iframe src="https://transcurrin-cl-client.vercel.app/" width="300" height="200" frameborder="0" scrolling="no"></iframe>
             <a href="https://transcurrin-cl-client.vercel.app/" class="project-article-iframe-enlace">VER SITIO</a>
           </div>
-        </article>
+        </article> */}
       </section>
     </section>
   )
