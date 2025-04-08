@@ -81,7 +81,7 @@ function Projects() {
             <p className="project-article-codes-p">CODE:</p>
             <div className="project-article-codes-section">
               <a
-                href="https://github.com/Pabloblockchain24/transcurrin.cl"
+                href="https://github.com/Pabloblockchain24/ejercicio2-modulo6-adalid-corfo"
                 className="project-article-codes-link"
               >
                 {" "}
@@ -89,7 +89,7 @@ function Projects() {
                 <p className="project-article-codes-link-p">FRONTEND</p>{" "}
               </a>
               <a
-                href="https://github.com/Pabloblockchain24/serverTranscurrin"
+                href=""
                 className="project-article-codes-link"
               >
                 {" "}
