@@ -8,14 +8,16 @@
 
 ## 🛠️ Tecnologías Utilizadas
 
-- ⚛️ React
+- ⚛️ React (JavaScript)
+- 🧑‍🎨 HTML5 + CSS3
 - 💅 SCSS (Sass)
 - 🧰 Vite
-- 🧑‍🎨 HTML5 + CSS3
-- 📁 Git + GitHub Pages
+- 📁 Git
+- ▲ Vercel 
 
 ## 📂 Estructura del Proyecto
 
+```
 portfolio-Front/
 ├── public/           # Archivos públicos
 ├── src/              # Código fuente
@@ -29,6 +31,7 @@ portfolio-Front/
 ├── package.json
 ├── README.md
 └── vite.config.js
+```
 
 ## ✨ Funcionalidades
 - Diseño responsive adaptable a escritorio y móviles 📱💻
@@ -38,10 +41,12 @@ portfolio-Front/
 
 
 ## ✨ Instrucciones de instalación
-
+```
 git clone https://github.com/Pabloblockchain24/portfolio-Front.git
 npm install
 npm run dev
+```
+
 
 ## 📫 Contacto
 LinkedIn: linkedin.com/in/pabloblockchain24
