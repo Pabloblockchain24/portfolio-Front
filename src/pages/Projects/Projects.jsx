@@ -6,18 +6,16 @@ import express from "../../assets/imgs/hardSkills/expressLogo.jpg";
 import js from "../../assets/imgs/hardSkills/jsLogo.jpg";
 import html from "../../assets/imgs/hardSkills/htmlLogo.jpg";
 import css from "../../assets/imgs/hardSkills/cssLogo.jpg";
-
 import transcurrin from "../../assets/imgs/others/transcurrin.png";
 import bobo from "../../assets/imgs/others/bobo.png";
 import hospital from "../../assets/imgs/others/hospital.png";
-
 import ProjectArticle from "../../components/Project-article/Project-article";
 
 function Projects() {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    fetch("src/data/projects.json")
+    fetch("/src/data/projects.json")
       .then((response) => response.json())
       .then((data) => {
         setProjects(data);
