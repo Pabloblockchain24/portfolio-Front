@@ -1,0 +1,30 @@
+[
+    {
+      "title": "HOSPITAL ADALID",
+      "description": "Proyecto full-stack con MERN y deploy en Vercel. Cuenta con una aplicacion web comercial y una intranet para clientes.",
+      "techs": ["js", "html", "css", "react"],
+      "mockup": "hospital",
+      "linkFrontend": "https://github.com/Pabloblockchain24/ejercicio2-modulo8-adalid-corfo",
+      "linkBackend": "",
+      "url": "https://ejercicio2-modulo8-adalid-corfo.vercel.app/"
+    },
+    {
+      "title": "TRANSCURRIN.CL",
+      "description": "Proyecto full-stack con MERN y deploy en Vercel. Cuenta con una aplicacion web comercial y una intranet para clientes.",
+      "techs": ["mongo", "express", "react", "node"],
+      "mockup": "transcurrin",
+      "linkFrontend": "https://github.com/Pabloblockchain24/transcurrin-Web_Front",
+      "linkBackend": "https://github.com/Pabloblockchain24/transcurrin-Back",
+      "url": "https://transcurrin.cl"
+    },
+    {
+      "title": "BOBO.CL",
+      "description": "Proyecto full-stack con MERN y deploy en Vercel. Cuenta con una aplicacion web comercial y una intranet para clientes.",
+      "techs": ["mongo", "express", "react", "node"],
+      "mockup": "bobo",
+      "linkFrontend": "https://github.com/Pabloblockchain24/bobo.cl-front",
+      "linkBackend": "https://github.com/Pabloblockchain24/bobo.cl-back",
+      "url": "https://bobo-cl-front.vercel.app"
+    }
+  ]
+  

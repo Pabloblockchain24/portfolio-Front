@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { BrowserRouter } from "react-router-dom";
-import "./App.css"
 import Home from "./pages/Home/Home";
 import Navbar from "./components/Navbar/Navbar"
 import Projects from "./pages/Projects/Projects";
@@ -22,9 +21,9 @@ function App() {
         <Navbar onLinkClick={handleAnimationReload} />
         
         <main className='main'>
-          <Home />
-          <Projects />
-          <Skills />
+         <Home />
+         <Projects />    
+          <Skills /> 
           <Contact />
         </main>
         <Footer />

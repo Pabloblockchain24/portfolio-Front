@@ -1,0 +1,84 @@
+@use '../themes/theme-portfolio' as colors; 
+@use '../abstracts/variables' as breakpoints;
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+main{
+    padding-inline: 18rem;
+    background-color: colors.$background;
+}
+
+h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    padding: 4rem 0 5rem 0 ;
+    color: colors.$white;
+    &::after{
+        content: '';
+        display: block;
+        width: 50%;
+        height: 3px;
+        background-color:#ffffff;
+        margin: 0 auto;
+        margin-top: 0.2rem;
+    }
+}
+
+
+@media screen and (max-width: breakpoints.$breakpoint-xxl) {
+    main{
+        padding-inline: 14rem;
+    }
+
+}
+
+@media screen and (max-width: breakpoints.$breakpoint-xl) {
+    main{
+        padding-inline: 10rem;
+    }
+    h1{
+        font-size: 2rem
+    }
+}
+
+@media screen and (max-width: breakpoints.$breakpoint-lg) {
+    main{
+        padding-inline: 8em;
+    }
+    h1{
+        font-size: 1.8rem
+    }
+}
+
+@media screen and (max-width: breakpoints.$breakpoint-md) {
+    main{
+        padding-inline: 6rem;
+    }
+    h1{
+        font-size: 1.5rem
+    }
+}
+
+@media screen and (max-width: breakpoints.$breakpoint-sm) {
+    main{
+        padding-inline: 3rem;
+    }
+    h1{
+        font-size: 1.25rem
+    }
+}
+
+@media screen and (max-width: breakpoints.$breakpoint-xs) {
+    main{
+        padding-inline: 2.5rem;
+    }
+    h1{
+        font-size: 1.15rem
+    }
+}

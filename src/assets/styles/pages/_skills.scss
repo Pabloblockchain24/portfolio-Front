@@ -1,0 +1,199 @@
+@use '../themes/theme-portfolio' as colors; 
+@use '../abstracts/variables' as breakpoints; 
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 5vh;
+
+    &-hard{
+        width: 100%;
+        background-color: colors.$white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-block: 1rem;
+        gap: 1rem;
+
+        img{
+            width:60px;
+            transform: translateY(-50px);
+            transition: opacity 1s ease-in-out, transform 1s;
+            opacity: 0;
+
+            &.visible{
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    }
+
+    &-soft {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        &-card{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            padding: 1.5rem;
+            opacity: 0;
+            transform: translateX(100%);
+            transition: transform 1s, opacity 0.5s;
+
+            &.visible{
+                opacity: 1;
+                transform: translateX(0);
+            }
+            &-img{
+                width: 100px;
+            }
+            h2{
+                margin-bottom: 0.5rem;
+                font-size: 1.5rem;
+            }
+            p{
+                font-size: 1rem;
+            }
+
+        }
+    }
+
+    .item1{
+        background-color: colors.$item1;
+        grid-row: span 2;
+    }
+
+    .item2{
+        background-color: colors.$item2;
+        width: auto;
+    }
+
+    .item3{
+        background-color: colors.$item3;
+        width: auto;
+    }
+
+    .item4{
+        background-color:  colors.$item4;
+        grid-row: span 2;
+    }
+
+}
+
+@media screen and (max-width: breakpoints.$breakpoint-xxl) {
+    .skills-hard img{
+        width: 50px !important;
+    }
+
+    .skills-soft-card{
+
+        &-img{
+            width: 80px !important;
+        }
+        h2{
+            font-size: 1rem !important;
+        }
+        p{
+            font-size: 0.8rem !important;
+        }
+    }
+}
+
+@media screen and (max-width: breakpoints.$breakpoint-xl) {
+
+    .skills-soft-card{
+        padding: 1rem;
+        &-img{
+            width: 60px !important;
+        }
+        h2{
+            font-size: 0.9rem !important;
+        }
+        p{
+            font-size: 0.7rem !important;
+        }
+    }
+}
+
+
+@media screen and (max-width: breakpoints.$breakpoint-lg) {
+    .skills-hard{
+        gap: 0.5rem;
+        & img{
+            width: 40px !important;
+        }
+    }
+    
+    .skills-soft-card{
+        padding: 0.5rem;
+
+        &-img{
+            width: 50px !important;
+        }
+        h2{
+            font-size: 0.85rem !important;
+        }
+        p{
+            font-size: 0.65rem !important;
+        }
+    }
+}
+
+
+@media screen and (max-width: breakpoints.$breakpoint-md) {
+    .skills-hard{
+        gap: 0;
+        & img{
+            width: 35px !important;
+        }
+    }
+    .skills-soft-card{
+
+        &-img{
+            width: 40px !important;
+        }
+        h2{
+            font-size: 0.8rem !important;
+        }
+        p{
+            font-size: 0.6rem !important;
+        }
+    }
+}
+
+@media screen and (max-width: breakpoints.$breakpoint-sm) {
+    .skills-hard img{
+            width: 30px !important;
+    }
+    .skills-soft-card{
+        padding: 0.25rem;
+        &-img{
+            width: 30px !important;
+        }
+        h2{
+            font-size: 0.65rem !important;
+        }
+        p{
+            font-size: 0.5rem !important;
+        }
+    }
+}
+
+@media screen and (max-width: breakpoints.$breakpoint-xs) {
+    .skills-soft-card{
+        &-img{
+            width: 20px !important;
+        }
+        h2{
+            font-size: 0.5rem !important;
+        }
+        p{
+            font-size: 0.4rem !important;
+        }
+    }
+}

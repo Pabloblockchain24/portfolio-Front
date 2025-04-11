@@ -1,41 +1,37 @@
-import React from 'react'
-import "./Contact.css"
 
 function Contact() {
   return (
     <section className='contact' id="contact">
-      <div className="contact-card">
-        <h1 className='contact-title'> Contact</h1>
-        <form className="contact-form">
+      <h1>Contact</h1>
 
-          <article className="contact-article">
+      <div className="contact-card">
+        <form className="contact-card-form">
+
+          <article className="contact-card-form-article">
             <input type="text"
-              className="contact-input"
               placeholder="Juan Perez"
             />
           </article>
 
-          <article className="contact-article">
+          <article className="contact-card-form-article">
             <input type="email"
-              className="contact-input"
               placeholder="juanperez@gmail.com"
             />
           </article>
 
-          <article className="contact-article">
+          <article className="contact-card-form-article">
             <textarea
-              className="contact-input"
-              rows="1"
+              rows="3"
               placeholder="Cuéntame más..."
             ></textarea>
           </article>
 
-          <button type="submit" className="contact-button"> ENVIAR </button>
+          <button type="submit" className="contact-card-form-button"> ENVIAR </button>
 
           <hr />
-          <div className='auxContact'>
+          <footer className='contact-card-form-footer'>
             Mi correo es: parcepaiva@gmail.com
-          </div>
+          </footer>
         </form>
       </div>
     </section >

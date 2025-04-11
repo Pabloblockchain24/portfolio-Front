@@ -1,0 +1,85 @@
+@use '../themes/theme-portfolio' as colors; 
+@use '../abstracts/variables' as breakpoints; 
+
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: colors.$black;
+    margin: 0 auto 0 auto;
+    width: 100%;
+    padding: 4rem 0 8rem 0;
+
+    &-card{
+        background-color: colors.$white ;
+        display: flex;
+        justify-content: center;
+        padding: 3rem 0 1.5rem 0;
+        width: 100%;
+
+        &-form{
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+
+            &-article{
+                margin-bottom: 1.5rem;
+
+                & > * {
+                    padding: 1rem;
+                    border: 0;
+                    border-bottom: 1px solid colors.$grey;
+                    width: 100%;
+                }
+
+            }
+
+            &-button{
+                display: flex;
+                justify-content: center;
+                padding-block: 0.5rem;
+                margin-block: 2rem;
+                width: 20%;
+                margin-inline: auto;
+                border: 1px solid colors.$grey;
+
+                &:hover{
+                    background-color: colors.$title-color;
+                    color: colors.$white;
+                    cursor: pointer;
+                    border: 1px solid colors.$white;
+                }
+            }
+
+            &-footer{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 1rem;
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: breakpoints.$breakpoint-md) {
+    .contact-card-form{
+        &-article{
+            margin-bottom: 1rem !important;
+            & > * {
+                padding: 0.5rem !important;
+            }
+        }
+        &-footer{
+            font-size: 0.7rem !important;
+        }
+        &-button{
+            width: 40% !important;
+        }
+
+    }
+
+}
+
+

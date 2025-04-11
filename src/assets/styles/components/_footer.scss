@@ -1,0 +1,85 @@
+@use '../themes/theme-portfolio' as colors;
+@use '../abstracts/variables' as breakpoints;
+
+.footer {
+    background-color: colors.$white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-block: 2rem;
+
+    &-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+
+        &-article {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            font-weight: bold;
+
+            &-copyright {
+                font-size: 1rem;
+            }
+
+            &-buttons {
+                display: flex;
+                gap: 1rem;
+
+                &-fa {
+                    width: 50px;
+                    height: auto;
+                    color: colors.$background;
+                    opacity: 0.75;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: breakpoints.$breakpoint-lg) {
+    .footer-main-article {
+        &-copyright {
+            font-size: 0.75rem !important;
+        }
+
+        &-buttons {
+            gap: 0.5rem;
+
+            &-fa {
+                width: 40px !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: breakpoints.$breakpoint-md) {
+    .footer-main {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: breakpoints.$breakpoint-sm) {
+    .footer-main-article {
+        &-copyright {
+            font-size: 0.6rem !important;
+        }
+
+        &-buttons {
+            gap: 0.25rem;
+
+            &-fa {
+                width: 30px !important;
+            }
+        }
+    }
+}
