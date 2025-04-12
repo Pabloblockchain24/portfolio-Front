@@ -822,10 +822,20 @@ h1::after {
   display: flex;
   justify-content: center;
   padding-block: 0.5rem;
-  margin-block: 2rem;
+  margin-block: 1rem;
   width: 20%;
   margin-inline: auto;
   border: 1px solid #A9A9A9;
+}
+.contact-card-form-button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-card-form-button-container p {
+  padding-bottom: 1rem;
+  font-size: 1rem;
 }
 .contact-card-form-button:hover {
   background-color: #E67E22;
