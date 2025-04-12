@@ -1,20 +1,44 @@
+import { useForm } from "react-hook-form"
 
 function Contact() {
+  const { handleSubmit, register } = useForm()
+
+  const onSubmit = handleSubmit(async (data) => {
+    console.log(data)
+
+    try {
+      await fetch("https://portfolio-backend-arce.vercel.app/api/contactMail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      })
+    } catch (error) {
+      console.error(error)
+    }
+
+  })
+
+
   return (
     <section className='contact' id="contact">
-      <h1>Contact</h1>
-
+     <h1>Contact</h1>
       <div className="contact-card">
-        <form className="contact-card-form">
+        <form onSubmit={onSubmit} className="contact-card-form">
 
           <article className="contact-card-form-article">
-            <input type="text"
+            <input 
+              type="text"
+              {...register("name", { required: true })}
               placeholder="Juan Perez"
             />
           </article>
 
           <article className="contact-card-form-article">
-            <input type="email"
+            <input 
+              type="email"
+              {...register("email", { required: true })}
               placeholder="juanperez@gmail.com"
             />
           </article>
@@ -22,6 +46,7 @@ function Contact() {
           <article className="contact-card-form-article">
             <textarea
               rows="3"
+              {...register("message", { required: true })}
               placeholder="Cuéntame más..."
             ></textarea>
           </article>
